@@ -1,0 +1,40 @@
+import boto3
+import json
+ 
+def lambda_handler(event, context):
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table('prompts-table')
+    
+    '''Getting the keys as a List from the prompts-table which all are partionkeys'''
+    
+    keys = [
+        'start-note',
+        'end-note',
+        'error-options',
+        'error-hoo',
+        'error-queue',
+        'options-note',
+        'customerqueue-note',
+        'agent-whisper-note',
+        'customer-whisper-note',
+        'lambda-error-note',
+        'default-options-note',
+        'timeout-options-note',
+        'lex-voicemail-note',
+        'at-capacity-note',
+        'billing-hours-note',
+        'appointment-hours-note',
+        'generic-hours-note'
+    ]
+ 
+    attributes = {}
+    '''Iterating through all the partition keys and storing the respective value(play prompt) of the key as response'''
+    for i in keys:
+        response = table.get_item(Key={'welcome-message': i})
+        
+        '''Modifying the attribute key by using Title method for readability'''
+    
+        attributeKey = i.replace('-', ' ').title().replace(' ', '') 
+        attributes[attributeKey] = response['Item']['greeting']
+ 
+    return attributes
