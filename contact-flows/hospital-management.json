@@ -1,0 +1,1481 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "24444c7f-a0e9-43eb-a630-81f3224cd01a",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -1563.2,
+      "y": -340
+    },
+    "ActionMetadata": {
+      "64350ba1-d101-4db8-9dad-b0459ae302da": {
+        "position": {
+          "x": -841.6,
+          "y": 466.4
+        }
+      },
+      "welcomeAppointments": {
+        "position": {
+          "x": 1221.6,
+          "y": -964.8
+        },
+        "isFriendlyName": true
+      },
+      "welcomeGeneric": {
+        "position": {
+          "x": 1220.8,
+          "y": -780.8
+        },
+        "isFriendlyName": true
+      },
+      "ef16559c-66a0-4d7e-9d5f-078ff743ca16": {
+        "position": {
+          "x": 2298.4,
+          "y": 920
+        }
+      },
+      "knowAppointmentHours": {
+        "position": {
+          "x": 1392.8,
+          "y": 952
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "agentOrVoiceBlock": {
+        "position": {
+          "x": 1017.6,
+          "y": -416.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          },
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "2358480-hospital-management"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "2358480-hospital-management",
+        "lexV2BotAliasName": "TestBotAlias",
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "9878978f-7fb4-43d5-b971-518e6ac29757",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "agentTransfer"
+          },
+          {
+            "id": "8bc8b847-a7df-4564-92be-6615fef56894",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "voicemailIntent"
+          }
+        ]
+      },
+      "optionsBlockError": {
+        "position": {
+          "x": 1010.4,
+          "y": 522.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "HOO error": {
+        "position": {
+          "x": 756,
+          "y": 206.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "voiceMailBlock": {
+        "position": {
+          "x": 1399.2,
+          "y": -101.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "ideathonVM"
+          }
+        },
+        "ContactFlow": {
+          "text": "ideathonVM"
+        }
+      },
+      "outofHooOptions": {
+        "position": {
+          "x": 1020,
+          "y": 146.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "85bd3c56-cdce-4afe-ae02-4995bd2fb8e2",
+            "value": "1"
+          },
+          {
+            "id": "b1d91eaa-c138-4bc0-90c6-d26e528cb705",
+            "value": "2"
+          }
+        ]
+      },
+      "152c8b5d-d16c-4105-8a13-c30c70c7504e": {
+        "position": {
+          "x": 717.6,
+          "y": 544.8
+        }
+      },
+      "9caf891a-d256-41da-a002-e8e26e409822": {
+        "position": {
+          "x": 48.8,
+          "y": 557.6
+        }
+      },
+      "5d493f17-4bdc-4dc7-a8f0-ad8c24d92237": {
+        "position": {
+          "x": 873.6,
+          "y": -1043.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "988a789b-310c-45b8-97e1-c6db86b9ba94",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-biiling-queue"
+          },
+          {
+            "id": "184a1f61-85d6-492b-8c61-c0fe45642033",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-appointment-queue"
+          },
+          {
+            "id": "e4d7f247-9500-4df8-b404-126b4984e020",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-generic-queue"
+          }
+        ]
+      },
+      "welcomeBilling": {
+        "position": {
+          "x": 1219.2,
+          "y": -1148.8
+        },
+        "isFriendlyName": true
+      },
+      "24444c7f-a0e9-43eb-a630-81f3224cd01a": {
+        "position": {
+          "x": -1421.6,
+          "y": -350.4
+        }
+      },
+      "voiceMailBlock-copy-1": {
+        "position": {
+          "x": 2153.6,
+          "y": -664
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "ideathonVM"
+          }
+        },
+        "ContactFlow": {
+          "text": "ideathonVM"
+        }
+      },
+      "231783db-31f3-4ead-9cf6-dc91af30a531": {
+        "position": {
+          "x": 2263.2,
+          "y": -180.8
+        }
+      },
+      "c96c3b3b-9dec-42f4-9ce3-75b697c6517c": {
+        "position": {
+          "x": 1628,
+          "y": -726.4
+        },
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "3deb2f6e-f48b-4ebb-83a0-825135dcdbf1",
+            "value": "1"
+          },
+          {
+            "id": "ab68271b-242a-4474-b37e-a13ba6f6d886",
+            "value": "2"
+          }
+        ]
+      },
+      "endNote": {
+        "position": {
+          "x": 1772,
+          "y": -283.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "knowBillingHours": {
+        "position": {
+          "x": 1392.8,
+          "y": 772.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "1301a9c7-4ec7-4324-9596-5759b4f0eb27": {
+        "position": {
+          "x": 1512.8,
+          "y": -1244.8
+        }
+      },
+      "agentTransferBlock": {
+        "position": {
+          "x": 1394.4,
+          "y": -507.2
+        },
+        "isFriendlyName": true
+      },
+      "welcomeEmergency": {
+        "position": {
+          "x": 600,
+          "y": -619.2
+        },
+        "isFriendlyName": true
+      },
+      "workingHours": {
+        "position": {
+          "x": 739.2,
+          "y": -162.4
+        },
+        "isFriendlyName": true
+      },
+      "settingQueueError": {
+        "position": {
+          "x": 271.2,
+          "y": 323.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "genericQueue": {
+        "position": {
+          "x": 328,
+          "y": 36.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "2358480-generic-queue"
+          }
+        },
+        "queue": {
+          "text": "2358480-generic-queue"
+        }
+      },
+      "knowHooNote": {
+        "position": {
+          "x": 1858.4,
+          "y": 810.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "knowHOOError": {
+        "position": {
+          "x": 1859.2,
+          "y": 1173.6
+        },
+        "isFriendlyName": true
+      },
+      "checkAttributesKnowHoo": {
+        "position": {
+          "x": 1113.6,
+          "y": 844
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "ddb38aeb-8fd6-4411-8a24-f7d65439020b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-biiling-queue"
+          },
+          {
+            "id": "e87da6a6-4e49-48ea-ae13-4fa8f8ca0406",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-appointment-queue"
+          },
+          {
+            "id": "82e99ab4-8add-4e56-a5ea-a37ecad6759c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-generic-queue"
+          }
+        ]
+      },
+      "knowGenricHours": {
+        "position": {
+          "x": 1399.2,
+          "y": 1129.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "billingQueue": {
+        "position": {
+          "x": 332.8,
+          "y": -368
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "2358480-biiling-queue"
+          }
+        },
+        "queue": {
+          "text": "2358480-biiling-queue"
+        }
+      },
+      "appointmentQueue": {
+        "position": {
+          "x": 330.4,
+          "y": -175.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "2358480-appointment-queue"
+          }
+        },
+        "queue": {
+          "text": "2358480-appointment-queue"
+        }
+      },
+      "timeOutBlock": {
+        "position": {
+          "x": 35.2,
+          "y": 304
+        },
+        "isFriendlyName": true
+      },
+      "welcomeBlockError": {
+        "position": {
+          "x": -174.4,
+          "y": 309.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "emergencyQueue": {
+        "position": {
+          "x": 316,
+          "y": -609.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "2358480-emergency-queue"
+          }
+        },
+        "queue": {
+          "text": "2358480-emergency-queue"
+        }
+      },
+      "defaultQueueError": {
+        "position": {
+          "x": 81.6,
+          "y": 40
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "agentWhisper": {
+        "position": {
+          "x": -1196,
+          "y": -353.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "AgentWhisper": {
+              "displayName": "2358480-agent-whisper-flow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "2358480-agent-whisper-flow",
+          "id": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/40fc68e0-a753-4104-aed7-7dfef336c189"
+        },
+        "customerOrAgent": false
+      },
+      "customerWhisper": {
+        "position": {
+          "x": -970.4,
+          "y": -354.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerWhisper": {
+              "displayName": "2358480_test_voice_customerwhisperflow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "2358480_test_voice_customerwhisperflow",
+          "id": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/d28d010a-2889-4608-9aa8-f3e9f25fa566"
+        },
+        "customerOrAgent": true
+      },
+      "optionsBlock1": {
+        "position": {
+          "x": -192.8,
+          "y": -355.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "2358480-hospital-management"
+            }
+          },
+          "LexTimeoutSeconds": {
+            "Text": {
+              "unit": 60
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "2358480-hospital-management",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "79eae827-90a4-47b9-8c40-7e56a6eeca1f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "emergencyIntent"
+          },
+          {
+            "id": "b79d32f0-556b-4089-b3c9-4cd2fd5511b5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "billingIntent"
+          },
+          {
+            "id": "1d39d49b-6151-41c6-95f5-9aaac8f7d4a4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "appointmentIntent"
+          },
+          {
+            "id": "abda67d2-b898-4efa-8886-f3a0df7ed3da",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "backendError": {
+        "position": {
+          "x": -1196.8,
+          "y": 347.2
+        },
+        "isFriendlyName": true
+      },
+      "db-prompts-table": {
+        "position": {
+          "x": -712.8,
+          "y": -356
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "2358480-db-prompts"
+          }
+        },
+        "dynamicMetadata": {}
+      },
+      "customerQueue": {
+        "position": {
+          "x": -455.2,
+          "y": -356.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerQueue": {
+              "displayName": "2358480-hospital-management-queueflow +2358571_officeManagement"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "2358480-hospital-management-queueflow +2358571_officeManagement",
+          "id": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/3f85d6e5-7515-4e44-a702-f2366f31b02e"
+        },
+        "customerOrAgent": true
+      }
+    },
+    "Annotations": [],
+    "name": "2358480-hospital-management",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "64350ba1-d101-4db8-9dad-b0459ae302da",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SSML": "<prosody rate='73%'>appointment ward</prosody> \n"
+      },
+      "Identifier": "welcomeAppointments",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "agentTransferBlock",
+        "Errors": [
+          {
+            "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<prosody rate='73%'>generic ward</prosody> \n"
+      },
+      "Identifier": "welcomeGeneric",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "agentTransferBlock",
+        "Errors": [
+          {
+            "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "ef16559c-66a0-4d7e-9d5f-078ff743ca16",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.AppointmentHoursNote"
+      },
+      "Identifier": "knowAppointmentHours",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "knowHooNote",
+        "Errors": [
+          {
+            "NextAction": "knowHOOError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.OptionsNote",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:eu-west-2:189243246970:bot-alias/FACALVZDHD/TSTALIASID"
+        }
+      },
+      "Identifier": "agentOrVoiceBlock",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "optionsBlockError",
+        "Conditions": [
+          {
+            "NextAction": "5d493f17-4bdc-4dc7-a8f0-ad8c24d92237",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "agentTransfer"
+              ]
+            }
+          },
+          {
+            "NextAction": "voiceMailBlock",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "voicemailIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "optionsBlockError",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "optionsBlockError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.ErrorOptionsNote"
+      },
+      "Identifier": "optionsBlockError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+        "Errors": [
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.ErrorHoo"
+      },
+      "Identifier": "HOO error",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+        "Errors": [
+          {
+            "NextAction": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/3aab5a2a-9a53-458b-9cb1-959b2d8e15cc"
+      },
+      "Identifier": "voiceMailBlock",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+        "Errors": [
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "SSML": "$.External.LexVoicemailNote"
+      },
+      "Identifier": "outofHooOptions",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "HOO error",
+        "Conditions": [
+          {
+            "NextAction": "voiceMailBlock",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "checkAttributesKnowHoo",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "checkAttributesKnowHoo",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "HOO error",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "9caf891a-d256-41da-a002-e8e26e409822",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Queue.Name"
+      },
+      "Identifier": "5d493f17-4bdc-4dc7-a8f0-ad8c24d92237",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+        "Conditions": [
+          {
+            "NextAction": "welcomeBilling",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-biiling-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "welcomeAppointments",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-appointment-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "welcomeGeneric",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-generic-queue"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<prosody rate='73%'>Billing ward</prosody> "
+      },
+      "Identifier": "welcomeBilling",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "agentTransferBlock",
+        "Errors": [
+          {
+            "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "24444c7f-a0e9-43eb-a630-81f3224cd01a",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "agentWhisper"
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/3aab5a2a-9a53-458b-9cb1-959b2d8e15cc"
+      },
+      "Identifier": "voiceMailBlock-copy-1",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+        "Errors": [
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "231783db-31f3-4ead-9cf6-dc91af30a531",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "SSML": "$.External.AtCapacityNote"
+      },
+      "Identifier": "c96c3b3b-9dec-42f4-9ce3-75b697c6517c",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "endNote",
+        "Conditions": [
+          {
+            "NextAction": "voiceMailBlock-copy-1",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "endNote",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "endNote",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "endNote",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.EndNote"
+      },
+      "Identifier": "endNote",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+        "Errors": [
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.BillingHoursNote"
+      },
+      "Identifier": "knowBillingHours",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "knowHooNote",
+        "Errors": [
+          {
+            "NextAction": "knowHOOError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "agentTransferBlock",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+        "Errors": [
+          {
+            "NextAction": "c96c3b3b-9dec-42f4-9ce3-75b697c6517c",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "231783db-31f3-4ead-9cf6-dc91af30a531",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<prosody rate ='73%'> Emergency ward</prosody>"
+      },
+      "Identifier": "welcomeEmergency",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "agentTransferBlock",
+        "Errors": [
+          {
+            "NextAction": "1301a9c7-4ec7-4324-9596-5759b4f0eb27",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "workingHours",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "HOO error",
+        "Conditions": [
+          {
+            "NextAction": "agentOrVoiceBlock",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "outofHooOptions",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "HOO error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.ErrorQueueNote"
+      },
+      "Identifier": "settingQueueError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+        "Errors": [
+          {
+            "NextAction": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/queue/f10da224-8a36-4661-b5cc-e7399cc85e2e"
+      },
+      "Identifier": "genericQueue",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "workingHours",
+        "Errors": [
+          {
+            "NextAction": "settingQueueError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.EndNote"
+      },
+      "Identifier": "knowHooNote",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "ef16559c-66a0-4d7e-9d5f-078ff743ca16",
+        "Errors": [
+          {
+            "NextAction": "knowHOOError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Error occurred ,while retrieving working hours"
+      },
+      "Identifier": "knowHOOError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "ef16559c-66a0-4d7e-9d5f-078ff743ca16",
+        "Errors": [
+          {
+            "NextAction": "ef16559c-66a0-4d7e-9d5f-078ff743ca16",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Queue.Name"
+      },
+      "Identifier": "checkAttributesKnowHoo",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "knowHOOError",
+        "Conditions": [
+          {
+            "NextAction": "knowBillingHours",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-biiling-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "knowAppointmentHours",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-appointment-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "knowGenricHours",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-generic-queue"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "knowHOOError",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.GenericHoursNote"
+      },
+      "Identifier": "knowGenricHours",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "knowHooNote",
+        "Errors": [
+          {
+            "NextAction": "knowHOOError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/queue/93d15c76-cdf5-48d1-88a4-54774c8ea588"
+      },
+      "Identifier": "billingQueue",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "workingHours",
+        "Errors": [
+          {
+            "NextAction": "settingQueueError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/queue/6afeedb5-e5e1-4468-bdbf-414435701843"
+      },
+      "Identifier": "appointmentQueue",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "workingHours",
+        "Errors": [
+          {
+            "NextAction": "settingQueueError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.TimeoutOptionsNote"
+      },
+      "Identifier": "timeOutBlock",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "optionsBlock1",
+        "Errors": [
+          {
+            "NextAction": "9caf891a-d256-41da-a002-e8e26e409822",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.ErrorOptionsNote"
+      },
+      "Identifier": "welcomeBlockError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "9caf891a-d256-41da-a002-e8e26e409822",
+        "Errors": [
+          {
+            "NextAction": "9caf891a-d256-41da-a002-e8e26e409822",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/queue/252733f9-5318-4dce-8f72-1baa3fb45421"
+      },
+      "Identifier": "emergencyQueue",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "welcomeEmergency",
+        "Errors": [
+          {
+            "NextAction": "settingQueueError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.DefaultOptionsNote"
+      },
+      "Identifier": "defaultQueueError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "genericQueue",
+        "Errors": [
+          {
+            "NextAction": "152c8b5d-d16c-4105-8a13-c30c70c7504e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentWhisper": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/40fc68e0-a753-4104-aed7-7dfef336c189"
+        },
+        "EventHooksConfiguration": {
+          "AgentWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "agentWhisper",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "customerWhisper",
+        "Errors": [
+          {
+            "NextAction": "backendError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerWhisper": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/d28d010a-2889-4608-9aa8-f3e9f25fa566"
+        },
+        "EventHooksConfiguration": {
+          "CustomerWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "customerWhisper",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "db-prompts-table",
+        "Errors": [
+          {
+            "NextAction": "backendError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.External.StartNote",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:eu-west-2:189243246970:bot-alias/FACALVZDHD/TSTALIASID"
+        },
+        "LexTimeoutSeconds": {
+          "Text": "60"
+        }
+      },
+      "Identifier": "optionsBlock1",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "welcomeBlockError",
+        "Conditions": [
+          {
+            "NextAction": "emergencyQueue",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "emergencyIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "billingQueue",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "billingIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "appointmentQueue",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "appointmentIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "defaultQueueError",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "timeOutBlock",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "defaultQueueError",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "welcomeBlockError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "something error occured in the back end"
+      },
+      "Identifier": "backendError",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "64350ba1-d101-4db8-9dad-b0459ae302da",
+        "Errors": [
+          {
+            "NextAction": "64350ba1-d101-4db8-9dad-b0459ae302da",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:eu-west-2:189243246970:function:2358480-db-prompts",
+        "InvocationTimeLimitSeconds": "8",
+        "ResponseValidation": {
+          "ResponseType": "JSON"
+        }
+      },
+      "Identifier": "db-prompts-table",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "customerQueue",
+        "Errors": [
+          {
+            "NextAction": "backendError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerQueue": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/contact-flow/3f85d6e5-7515-4e44-a702-f2366f31b02e"
+        }
+      },
+      "Identifier": "customerQueue",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "optionsBlock1",
+        "Errors": [
+          {
+            "NextAction": "backendError",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

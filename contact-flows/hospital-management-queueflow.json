@@ -1,0 +1,331 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "e79481c4-3246-4718-a6cf-2ec88a65dbbd",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -300.8,
+      "y": 192
+    },
+    "ActionMetadata": {
+      "e79481c4-3246-4718-a6cf-2ec88a65dbbd": {
+        "position": {
+          "x": -124.8,
+          "y": 224.8
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "2358480-db-prompts"
+          }
+        },
+        "dynamicMetadata": {}
+      },
+      "84395048-8066-411d-9b04-a8ef15292a12": {
+        "position": {
+          "x": 154.4,
+          "y": 223.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "f61b832d-8e39-43c6-b16d-69fdbbe5d2b4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-emergency-queue"
+          },
+          {
+            "id": "64bf1e76-ce12-4700-9a13-ee36efdd17cf",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-biiling-queue"
+          },
+          {
+            "id": "87bf910b-93b6-4126-bfb4-a81e78f9154c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-appointment-queue"
+          },
+          {
+            "id": "c693ea01-9b84-4913-8422-bf9e8d42e1de",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358480-generic-queue"
+          }
+        ]
+      },
+      "e3a48da8-4e69-44d1-bb90-e69975e0fcc5": {
+        "position": {
+          "x": 450.4,
+          "y": 513.6
+        },
+        "dynamicParams": []
+      },
+      "0578aa1b-8e61-4acb-be1d-ec4017e9009e": {
+        "position": {
+          "x": 455.2,
+          "y": 706.4
+        },
+        "dynamicParams": []
+      },
+      "9daa1084-566e-4fc0-ad3a-c521513b67db": {
+        "position": {
+          "x": 456.8,
+          "y": 330.4
+        },
+        "dynamicParams": []
+      },
+      "5f065945-16c1-4898-bb78-02670e69a6f0": {
+        "position": {
+          "x": 756,
+          "y": 402.4
+        }
+      },
+      "e7a99c97-e5f9-4bd5-9eb2-8e35d45982ae": {
+        "position": {
+          "x": 439.2,
+          "y": 124.8
+        },
+        "dynamicParams": []
+      },
+      "098007b7-e257-4b7c-9c3c-741d4680517d": {
+        "position": {
+          "x": 750.4,
+          "y": 206.4
+        },
+        "parameters": {
+          "Messages": [
+            null,
+            {
+              "PromptId": {
+                "displayName": "Music_Jazz_MyTimetoFly_Inst.wav"
+              }
+            }
+          ],
+          "InterruptFrequencySeconds": {
+            "unit": 1
+          }
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/prompt/dcc69606-7a96-46c4-af98-da1b35c07828",
+            "text": "Music_Jazz_MyTimetoFly_Inst.wav",
+            "type": "Prompt"
+          }
+        ],
+        "timeoutUnit": {
+          "value": "sec"
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "2358480-hospital-management-queueflow",
+    "description": "Audio played when a customer is waiting in queue.",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:eu-west-2:189243246970:function:2358480-db-prompts",
+        "InvocationTimeLimitSeconds": "3",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "e79481c4-3246-4718-a6cf-2ec88a65dbbd",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "84395048-8066-411d-9b04-a8ef15292a12",
+        "Errors": [
+          {
+            "NextAction": "84395048-8066-411d-9b04-a8ef15292a12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Queue.Name"
+      },
+      "Identifier": "84395048-8066-411d-9b04-a8ef15292a12",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+        "Conditions": [
+          {
+            "NextAction": "e7a99c97-e5f9-4bd5-9eb2-8e35d45982ae",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-emergency-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "9daa1084-566e-4fc0-ad3a-c521513b67db",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-biiling-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "e3a48da8-4e69-44d1-bb90-e69975e0fcc5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-appointment-queue"
+              ]
+            }
+          },
+          {
+            "NextAction": "0578aa1b-8e61-4acb-be1d-ec4017e9009e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358480-generic-queue"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedQueue": "appointment service"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "e3a48da8-4e69-44d1-bb90-e69975e0fcc5",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "098007b7-e257-4b7c-9c3c-741d4680517d",
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedQueue": "generic service"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "0578aa1b-8e61-4acb-be1d-ec4017e9009e",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "098007b7-e257-4b7c-9c3c-741d4680517d",
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedQueue": "billing service"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "9daa1084-566e-4fc0-ad3a-c521513b67db",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "098007b7-e257-4b7c-9c3c-741d4680517d",
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "5f065945-16c1-4898-bb78-02670e69a6f0",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedQueue": "emergency service"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "e7a99c97-e5f9-4bd5-9eb2-8e35d45982ae",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "098007b7-e257-4b7c-9c3c-741d4680517d",
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "SSML": "$.External.CustomerQueueNote"
+          },
+          {
+            "PromptId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/prompt/dcc69606-7a96-46c4-af98-da1b35c07828"
+          }
+        ],
+        "InterruptFrequencySeconds": "20"
+      },
+      "Identifier": "098007b7-e257-4b7c-9c3c-741d4680517d",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+        "Conditions": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "MessagesInterrupted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "5f065945-16c1-4898-bb78-02670e69a6f0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
