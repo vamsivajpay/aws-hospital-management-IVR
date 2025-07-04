@@ -1,4 +1,4 @@
-🤖 Lex Bot Summary
+🤖 Lex Bot Summary:
 The Lex bot serves as the conversational front-end for the Amazon Connect IVR system. It prompts callers to specify their reason for calling—emergency, appointment, or billing—and routes them accordingly. The bot uses ASR (Automatic Speech Recognition) to match user utterances to predefined intents and supports fallback handling for unmatched input.
 
 🧠 Intents Overview
