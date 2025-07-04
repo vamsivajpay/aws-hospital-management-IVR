@@ -25,7 +25,7 @@ This CSV file contains two columns:
 | `at-capacity-note`     | `Sorry we are experiencing high call volume...`                             |
 | `lex-voicemail-note`   | `You called us in out of hours... press one to leave a voice mail...`       |
 
----
+---PLEASE FIND SNAPSHOTS IN THE DIRECTORY FOR REFERENCE---
 
 ## 🧱 DynamoDB Table Schema
 
